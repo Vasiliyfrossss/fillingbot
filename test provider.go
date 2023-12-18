@@ -16,5 +16,13 @@ func (suite *IntegrationTestSuite) TestAppleIAPOrderExist() {
 	items := createNAppleIAPOrder(k, ctx, 10)
 	for _, item := range items {
 		require.True(k.HasAppleIAPOrder(ctx, item.PurchaseId))
-	}
+
+	
+	
+		k := suite.k
+	ctx := suite.ctx
+	require := suite.Require()
+
+	items := createNAppleIAPOrder(k, ctx, 10)
+	count := uint64(len(items))}
 }
